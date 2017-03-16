@@ -1,0 +1,27 @@
+﻿<Controls:MetroWindow x:Class="Sample.MVP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:Sample.MVP"
+                      WindowStartupLocation="CenterScreen"
+                      
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" >
+        <TextBlock  TextWrapping="Wrap" Text="User Name"/>
+        <TextBox x:Name="txtUserName" Height="23" TextWrapping="Wrap" Text=""/>
+        <TextBlock  TextWrapping="Wrap" Text=""/>
+        <TextBlock  TextWrapping="Wrap" Text="Password"/>
+        <TextBox x:Name="txtPassword" Height="23" TextWrapping="Wrap" Text=""/>
+        <Button x:Name="button" Content="Login" />
+        <StackPanel  x:Name="messagePanel" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" >
+            <TextBlock x:Name="lblMessage"  TextWrapping="Wrap" Text="Message"/>
+            <TextBox x:Name="txtContentMessage" Height="23" TextWrapping="Wrap" Text=""/>
+            <Button x:Name="btnAddMessage" Content="Add Message"/>
+            <ListBox x:Name="listMessage" Height="100" DisplayMemberPath="ContentMessage"/>
+        </StackPanel>
+    </StackPanel>
+
+</Controls:MetroWindow>
